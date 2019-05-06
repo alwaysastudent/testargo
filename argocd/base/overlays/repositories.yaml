@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+data:
+  repositories: |
+    - sshPrivateKeySecret:
+        name: ssh-key
+        key: sshPrivateKey
+      url: git@github.com:funketimo/testargo.git
+

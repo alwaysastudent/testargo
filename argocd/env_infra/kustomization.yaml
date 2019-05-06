@@ -1,0 +1,6 @@
+bases:
+- ../base
+- ../../apps/env_infra
+
+patchesStrategicMerge:
+- app/argocd.yaml

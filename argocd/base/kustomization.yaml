@@ -1,0 +1,13 @@
+bases:
+- base
+- app
+
+patchesStrategicMerge:
+- overlays/repositories.yaml
+
+resources:
+- secrets/ssh-key.sealed.yaml
+- namespace.yaml
+
+namespace: argocd
+
